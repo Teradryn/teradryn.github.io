@@ -1,0 +1,4 @@
+{
+		"__comment": "We are using `vendors` as the dirname of the bower components for readability in html and css.",
+		"directory": "vendors"
+}

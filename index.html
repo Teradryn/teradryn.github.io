@@ -1,0 +1,21 @@
+<html ng-app="HomePageApp">
+	<head>
+		<title>Teradryn</title>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+		<!-- Vendor stylesheets -->
+		<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.css" />
+		<!-- Cutom stylesheets -->
+		<link rel="stylesheet" href="/assets/main.css">
+		<!-- Vendor scripts, managed by bower -->
+		<script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+		<script type="text/javascript" src="/vendors/moment/moment.js"></script>
+		<!-- Custom scripts, include angular app to manage page -->
+		<script type="text/javascript" src="/assets/app.js"></script>
+		
+	</head>
+	<body ng-controller="HomePageCtrl">
+		<!-- using angular includes to easily edit and update site and components -->
+		<div ng-include src="comingSoon"></div>
+	</body>
+</html>
