@@ -1,0 +1,10 @@
+/*
+	Splash header, used for marketing pages like the front page of the website.
+*/
+.splash-header {
+	background: #4F79AE;
+	color: white;
+}
+	.splash-header h1 {
+		font-weight: 300;
+	}

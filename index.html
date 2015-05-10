@@ -4,9 +4,13 @@
 		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
 		<!-- Vendor stylesheets -->
+		<link href='http://fonts.googleapis.com/css?family=Roboto:500,900,100,700,400' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="/vendors/bootstrap/dist/css/bootstrap.css" />
 		<!-- Cutom stylesheets -->
 		<link rel="stylesheet" href="/assets/main.css">
+		<link rel="stylesheet" href="/assets/headers.css">
+
+
 		<!-- Vendor scripts, managed by bower -->
 		<script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
 		<script type="text/javascript" src="/vendors/moment/moment.js"></script>
@@ -16,6 +20,6 @@
 	</head>
 	<body ng-controller="HomePageCtrl">
 		<!-- using angular includes to easily edit and update site and components -->
-		<div ng-include src="comingSoon"></div>
+		<div ng-include src="splashHeader"></div>
 	</body>
 </html>

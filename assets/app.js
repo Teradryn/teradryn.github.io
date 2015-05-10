@@ -4,6 +4,7 @@ var homePage = angular.module('HomePageApp', []);
 // Main controller
 homePage.controller('HomePageCtrl', ['$scope', function($scope) {
 	$scope.comingSoon	= '/partials/comingSoon.html';
+	$scope.splashHeader	= '/partials/headers/splashHeader.html';
 }]);
 
 
