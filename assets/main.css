@@ -1,11 +1,16 @@
+/****
+Main blue: #4F79AE;
+Red: #FC0D0D;
 
+****/
 .splash-background {    
-	background: url('/assets/images/coming-soon.jpg') no-repeat center center fixed;
+	/*background: url('/assets/images/coming-soon.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed;*/
+    background: #4F79AE;
     position: fixed;
     top: 0px;
     left:0px;
@@ -13,19 +18,17 @@
     height:105%;
     z-index: 3;
 }
-	.splash-background:before {
+	/*.splash-background:before {
 		content: '';
-		/*background: url('/assets/images/cover-pattern.png');
-		background-size: 50px;*/
 		background: #212121;
-		opacity: 0.2;
+		opacity: 0.1;
 		position: absolute;
 		top: 0px;
 	    left:0px;
 	    width:100%;
 	    height:100%;
 	    z-index: 4;
-	}
+	}*/
 .overlay {
 	position: relative;
 	color: white;
@@ -67,7 +70,7 @@
 	margin: 80px 0px 40px;
 }
 	.email-sign-up .call-to-action {
-		color: #d9534f;
+		color: #FC0D0D;
 		font-size: 1.1em;
 		font-weight: 600;
 
