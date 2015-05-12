@@ -1,10 +1,18 @@
-var homePage = angular.module('HomePageApp', []);
+var homePage = angular.module('MainApp', [
+	'ngMaterial'
+]);
 
 
 // Main controller
 homePage.controller('HomePageCtrl', ['$scope', function($scope) {
-	$scope.comingSoon	= '/partials/comingSoon.html';
-	$scope.splashHeader	= '/partials/headers/splashHeader.html';
+	// Coming Soon
+	$scope.comingSoon	= '/partials/coming-soon.html';
+	$scope.emailSignUp	= '/partials/email-sign-up.html';
+	// Headers
+	$scope.splashHeader	= '/partials/headers/splash-header.html';
+	$scope.navHeader	= '/partials/headers/nav-header.html';
+	// Sections
+	$scope.aboutSection	= '/partials/sections/about-section.html';
 }]);
 
 
@@ -30,10 +38,12 @@ homePage.controller('ComingSoon', ['$scope', '$interval', function($scope, $inte
 		if ($scope.minutes > 0) {
 			$scope.minutes--;
 		} else {
+		$scope.minutes = 60;
 		// reduce hours
 		if ($scope.hours > 0) {
 			$scope.hours--;
 		} else {
+		$scope.hours = 24;
 		// reduce days
 		if ($scope.days > 0) {
 			$scope.days--;

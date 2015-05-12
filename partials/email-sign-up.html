@@ -1,0 +1,15 @@
+
+<div ng-controller="EmailSignUp" class="email-sign-up">
+	<span class="call-to-action">Sign up to get email notifications.</span>
+
+	<form ng-submit="submit()" ng-show="status == 'waiting'">
+		<input type="email" placeholder="Enter your email" ng-model="email"/>
+		<input type="submit" value="Sign Up"/>
+	</form>
+	<div ng-show="status == 'sending'">
+		<h4>Sending</h4>
+	</div>
+	<div ng-show="status == 'sent'">
+		<h4>Sent</h4>
+	</div>
+</div>

@@ -4,7 +4,27 @@
 .splash-header {
 	background: #4F79AE;
 	color: white;
+	padding-top: 200px;
+	height: 500px;
+	text-align: center;
 }
 	.splash-header h1 {
-		font-weight: 300;
+		font-size: 5.4em;
+		/*margin-bottom: 0px;*/
+		font-weight: 400;
 	}
+	.splash-header p {
+		font-size: 1.6em;
+	}
+@media (max-width: 600px) {
+	.splash-header {
+		padding-top: 80px;
+		height: 300px;
+	}
+	.splash-header h1 {
+		font-size: 3.2em;
+	}
+	.splash-header p {
+		font-size: 1.2em;
+	}
+}

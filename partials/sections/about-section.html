@@ -1,0 +1,22 @@
+<section ng-controller="AboutSectionCtrl" class="about-section center">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-6">
+				<h1 class="md-display-1">About <span class="highlight">Teradryn</span></h1>			
+			</div>
+			<div class="col-sm-6">
+				<p class="md-title force-left">
+					<span class="highlight">Teradryn</span> is leading the way in technologically advanced toy for a new connected world. Our products have a wide array of uses &mdash; <span class="highlight-blue">providing a new experience for users of any age</span>.
+				</p>		
+			</div>
+		</div>
+		<div class="row main-points">
+			<!-- This data is generated from /assets/controllers/aboutSection.js so look there to change the image, title, and the content of each of the colemns -->
+			<div class="col-sm-4" ng-repeat="column in aboutColumns">
+				<img src="{{column.img}}" class="column-image"/>
+				<h3 class="column-title">{{column.title}}</h3>
+				<p class="md-body-2">{{column.content}}</p>
+			</div>
+		</div>
+	</div>
+</section>

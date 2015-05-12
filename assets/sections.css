@@ -1,0 +1,36 @@
+.center {
+	text-align: center;
+}
+.force-left {
+	text-align: left !important;
+}
+.highlight {
+	color: #EA9005;
+}
+.highlight-blue {
+	color: #4F79AE;
+}
+section {
+	padding: 20px 0px;
+
+}
+
+.about-section {
+/* This is a place holder to show seperation of this section from the rest
+ * random indentation is bad so if you need a placeholder like this to show
+ * that the following code is for this section please do this thank you.
+ */
+}
+	.about-section h1 {
+		margin-bottom: 30px;
+	}
+	.about-section .column-image {
+		height: 75px;
+		width:  75px;
+		display: inline-block;
+		margin: 15px 0px;
+		background: #4F79AE;
+	}
+	.about-section .main-points {
+		margin-top: 40px;
+	}
