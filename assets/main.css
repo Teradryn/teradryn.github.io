@@ -1,8 +1,5 @@
 /****
-Main blue: #4F79AE;
-Red: #FC0D0D;
-Orange: #FDA106;
-	Dark Orange: #EA9005;
+Main blue: #3F51B5;
 ****/
 
 
@@ -11,7 +8,7 @@ Orange: #FDA106;
 }
 /* Splashes of the main color*/
 .splash-background {    
-    background: #4F79AE;
+    background: #3F51B5;
     position: fixed;
     top: 0px;
     left:0px;
@@ -20,24 +17,14 @@ Orange: #FDA106;
     z-index: 3;
 }
 
-
-
-/* Bootstrap overrides */
-.btn-primary {
-	background: #FDA106;
-	border-color: #EA9005;
+.md-primary,
+.md-primary:focus {
+	background:#EC407A !important;
 }
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary.focus,
-.btn-primary:active,
-.btn-primary.activee {
-	background: #EA9005;
-	border-color: #EA9005;
+/*.md-primary:hover,*/
+.md-primary:active {
+	background: #F06292 !important;
 }
-
-
 
 
 

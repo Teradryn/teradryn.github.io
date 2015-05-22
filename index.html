@@ -15,10 +15,11 @@
 
 
 		<!-- Vendor scripts, managed by bower -->
-		<script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
+        <script type="text/javascript" src="/vendors/jquery/dist/jquery.min.js"></script>
+        <script type="text/javascript" src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="/vendors/angular/angular.min.js"></script>
 		<script type="text/javascript" src="/vendors/angular-animate/angular-animate.min.js"></script>
 		<script type="text/javascript" src="/vendors/angular-aria/angular-aria.min.js"></script>
-
 		<script type="text/javascript" src="/vendors/angular-material/angular-material.min.js"></script>
 		<script type="text/javascript" src="/vendors/moment/moment.js"></script>
 
@@ -26,12 +27,17 @@
 		<script type="text/javascript" src="/assets/app.js"></script>
 		<script type="text/javascript" src="/assets/controllers/navHeader.js"></script>
 		<script type="text/javascript" src="/assets/controllers/aboutSection.js"></script>
-
+		<script type="text/javascript" src="/assets/controllers/emailSignup.js"></script>
 		
 	</head>
-	<body ng-controller="HomePageCtrl">
+	<body ng-controller="HomePageCtrl" id="page-top">
 		<!-- using angular includes to easily edit and update site and components -->
-		<div ng-include src="splashHeader"></div>
+		<div ng-include src="navHeader"></div>
+		<div ng-include src="splash"></div>
 		<div ng-include src="aboutSection"></div>
+		<div ng-include src="hubSection"></div>
+		<div ng-include src="callToAction"></div>
+		<section></section>
+		<section></section>
 	</body>
 </html>

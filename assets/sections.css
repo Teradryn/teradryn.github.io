@@ -5,14 +5,17 @@
 	text-align: left !important;
 }
 .highlight {
-	color: #EA9005;
+	color: #673AB7;
 }
-.highlight-blue {
-	color: #4F79AE;
+.highlight-grey {
+	color: #757575;
 }
 section {
-	padding: 20px 0px;
+	padding: 60px 0px 40px;
 
+}
+.center {
+	text-align: center;
 }
 
 .about-section {
@@ -29,8 +32,32 @@ section {
 		width:  75px;
 		display: inline-block;
 		margin: 15px 0px;
-		background: #4F79AE;
+		background: #673AB7;
 	}
 	.about-section .main-points {
 		margin-top: 40px;
+	}
+
+
+/* About the hub */
+md-tabs {
+	min-height: 600px !important;
+}
+
+/* Call to action section */
+.call-to-action {
+	background: #EDE7F6;
+	padding: 40px 0px;
+}
+	.call-to-action h3 {
+		margin-top: 	0px; 
+		margin-bottom: 	20px; 
+	}
+	.call-to-action md-content {
+		overflow: hidden;
+	}
+
+	.call-to-action .md-raised {
+		display: block !important;
+		margin: auto !important;
 	}
