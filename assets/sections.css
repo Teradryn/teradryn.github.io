@@ -61,3 +61,20 @@ md-tabs {
 		display: block !important;
 		margin: auto !important;
 	}
+
+.spec-table {
+	/*width: 100%;*/
+	margin-bottom: 30px;
+}
+		.spec-table th:nth-child(1) {
+			width: 65%;
+		}
+		.spec-table tr {
+			height: 2em;
+		}
+		.spec-table tr:nth-child(2n) {
+			background: rgba(0,0,0,.06);
+		}
+		.spec-table td {
+			padding-right: 15px;
+		}
