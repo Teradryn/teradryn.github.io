@@ -1,7 +1,13 @@
 /****
 Main blue: #3F51B5;
 ****/
-
+html, body {
+	min-height: 100%;
+	position: relative;
+}
+html {
+	height: 100%;
+}
 
 *{
 	font-family: 'Roboto', sans-serif;
