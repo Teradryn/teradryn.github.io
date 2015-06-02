@@ -10,8 +10,8 @@ homePage.controller('HomePageCtrl', ['$scope', function($scope) {
 // Coming soon controller, move to module in new js file.
 homePage.controller('ComingSoon', ['$scope', '$interval', function($scope, $interval) {
 	// Map time to launch to scope variables
-	var releaseDay 		= moment('06-01-2015 00:00:00', 'MM-DD-YYYY HH:mm:ss');
-	var today			= moment();
+	var releaseDay 		= moment('06-15-2015 00:00:00', 'MM-DD-YYYY HH:mm:ss');
+	var today		= moment();
 
 	$scope.days 	= releaseDay.diff(today, 'days');
 	$scope.hours 	= releaseDay.diff(today, 'hours') 	% 24; // 24 hours in a day
