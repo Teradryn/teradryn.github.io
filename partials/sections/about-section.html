@@ -13,7 +13,7 @@
 		<div class="row main-points">
 			<!-- This data is generated from /assets/controllers/aboutSection.js so look there to change the image, title, and the content of each of the colemns -->
 			<div class="col-sm-4" ng-repeat="column in aboutColumns">
-				<img src="{{column.img}}" class="column-image"/>
+				<img ng-src="{{column.img}}" class="column-image"/>
 				<h3 class="column-title">{{column.title}}</h3>
 				<p class="md-body-2">{{column.content}}</p>
 			</div>

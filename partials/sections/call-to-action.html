@@ -1,24 +1,33 @@
 <section class="call-to-action" ng-controller="EmailSignupCtrl">
 	<div class="container">
 		<md-content layout-padding class="autoScroll">
-			<h3 class="md-display-1">Signup to receive email notifications.</h3>
-			<div class="row">
-				<div class="col-md-9">
-					<md-input-container class="md-icon-float" >
-						<label>Name</label>
-						<md-icon md-svg-src="/images/icons/person.svg" class="name"></md-icon>
-						<input ng-model="user.name" type="text">
-					</md-input-container>
-					<md-input-container >
-						<!-- Use floating placeholder instead of label -->
-						<md-icon md-svg-src="/images/icons/email.svg" class="email"></md-icon>
-						<input ng-model="user.email" type="email" placeholder="Email (required)" ng-required="true">
-					</md-input-container>
+			<div ng-show="status == 'waiting'">
+				<h3 class="md-display-1">Signup to receive email notifications.</h3>
+				<span class="error" ng-if="error">{{error}}</span>
+				<div class="row">
+					<div class="col-md-9">
+						<md-input-container class="md-icon-float" >
+							<label>Name</label>
+							<md-icon md-svg-src="/images/icons/person.svg" class="name"></md-icon>
+							<input ng-model="emailInfo.name" type="text">
+						</md-input-container>
+						<md-input-container >
+							<!-- Use floating placeholder instead of label -->
+							<md-icon md-svg-src="/images/icons/email.svg" class="email"></md-icon>
+							<input ng-model="emailInfo.email" type="email" placeholder="Email (required)" ng-required="true">
+						</md-input-container>
+					</div>
+					<div class="col-md-3">
+						<p class="md-body-2 center">By signing up you will receive notifications by email about Teradryn.</p>
+						<md-button class="md-raised md-primary il-center" ng-click="signup()">Sign up</md-button>
+					</div>
 				</div>
-				<div class="col-md-3">
-					<p class="md-body-2 center">By signing up you will receive notifications by email about Teradryn.</p>
-					<md-button class="md-raised md-primary il-center">Sign up</md-button>
-				</div>
+			</div>
+			<div ng-show="status == 'sending'">
+				<h3>Sending</h3>
+			</div>
+			<div ng-show="status == 'sent'">
+				<h3>Sent</h3>
 			</div>
 		</md-content>
 	</div>
