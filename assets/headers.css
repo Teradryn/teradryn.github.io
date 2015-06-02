@@ -20,7 +20,9 @@
 	}
 }
 
-
+#mainNav{
+    z-index: 50;
+}
 
 
 /*From the creative template*/

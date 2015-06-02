@@ -31,13 +31,20 @@
 		
 	</head>
 	<body ng-controller="HomePageCtrl" id="page-top">
+
 		<!-- using angular includes to easily edit and update site and components -->
 		<div ng-include src="navHeader"></div>
 		<div ng-include src="splash"></div>
 		<div ng-include src="aboutSection"></div>
 		<div ng-include src="hubSection"></div>
 		<div ng-include src="callToAction"></div>
+		<div ng-include src="teamMembers"></div>
+
 		<section></section>
-		<section></section>
+		<!--  -->
+	 	<md-sidenav class="md-sidenav-right md-whiteframe-z2 sidenav" md-component-id="right">
+	 		<md-content id="sidenav-content">
+	 	 	</md-content>
+		</md-sidenav>
 	</body>
 </html>

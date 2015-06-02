@@ -78,3 +78,29 @@ md-tabs {
 		.spec-table td {
 			padding-right: 15px;
 		}
+
+
+/*Team members secion*/
+.team-member {
+	width: 100%;
+	height: 240px;
+	margin: 15px 0px;
+	cursor: pointer;
+	background-size: cover;
+	outline: none;
+	background-color: rgba(0,0,0,.05); 
+}
+.connor {background-image: url(/images/connor-character.png);}
+.dave {background-image: url(/images/dave-character.png);}
+.tommy {background-image: url(/images/tommy-character.png);}
+.brian {background-image: url(/images/brian-character.png);}
+.charles {background-image: url(/images/charles-character.png);}
+.deepak {background-image: url(/images/deepak-character.png);}
+
+.team-member .content {
+	display: none;
+}
+.sidenav {
+	position: fixed;
+	z-index: 100;
+}

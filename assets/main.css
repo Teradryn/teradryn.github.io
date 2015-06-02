@@ -4,6 +4,7 @@ Main blue: #3F51B5;
 html, body {
 	min-height: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 html {
 	height: 100%;
@@ -114,4 +115,30 @@ html {
 .purp-squid {
 	display: inline-block;
 	
+}
+
+
+
+
+.tm-name {
+	padding-top: 50px;
+}
+	.tm-name img{
+		height: 50px;
+		margin: 5px;
+	}
+.tm-desc {
+	padding-top: 40px;
+}
+.tm-links {
+	padding-top: 24px;
+}
+.tm-link {
+	width:16px;
+	height:16px;
+	float: left;
+	margin: 5px 10px 0px 0px;
+}
+a {
+	color: #673AB7;
 }
