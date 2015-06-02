@@ -109,6 +109,9 @@ html {
 
 
 
-
-
-
+.white-squid,
+.black-squid,
+.purp-squid {
+	display: inline-block;
+	
+}
