@@ -32,7 +32,7 @@ section {
 		width:  75px;
 		display: inline-block;
 		margin: 15px 0px;
-		background: #673AB7;
+		/*background: #673AB7;*/
 	}
 	.about-section .main-points {
 		margin-top: 40px;
@@ -41,7 +41,7 @@ section {
 
 /* About the hub */
 md-tabs {
-	min-height: 600px !important;
+	min-height: 530px !important;
 }
 
 /* Call to action section */
@@ -83,12 +83,12 @@ md-tabs {
 /*Team members secion*/
 .team-member {
 	width: 100%;
-	height: 240px;
+	/*height: 240px;*/
 	margin: 15px 0px;
 	cursor: pointer;
 	background-size: cover;
 	outline: none;
-	background-color: rgba(0,0,0,.05); 
+	background-color: #EDE7F6; 
 }
 .connor {background-image: url(/images/connor-character.png);}
 .dave {background-image: url(/images/dave-character.png);}
@@ -99,8 +99,4 @@ md-tabs {
 
 .team-member .content {
 	display: none;
-}
-.sidenav {
-	position: fixed;
-	z-index: 100;
 }

@@ -10,12 +10,23 @@
 				</p>		
 			</div>
 		</div>
+		<br>
 		<div class="row main-points">
 			<!-- This data is generated from /assets/controllers/aboutSection.js so look there to change the image, title, and the content of each of the colemns -->
-			<div class="col-sm-4" ng-repeat="column in aboutColumns">
-				<img ng-src="{{column.img}}" class="column-image"/>
-				<h3 class="column-title">{{column.title}}</h3>
-				<p class="md-body-2">{{column.content}}</p>
+			<div class="col-sm-4">
+				<img src="/images/rocket.svg" class="column-image"/>
+				<h3 class="column-title">Fast</h3>
+				<!-- <p class="md-body-2">{{column.content}}</p> -->
+			</div>
+			<div class="col-sm-4">
+				<img src="/images/fun.svg" class="column-image"/>
+				<h3 class="column-title">Fun</h3>
+				<!-- <p class="md-body-2">{{column.content}}</p> -->
+			</div>
+			<div class="col-sm-4">
+				<img src="/images/cream.svg" class="column-image"/>
+				<h3 class="column-title">Affordable</h3>
+				<!-- <p class="md-body-2">{{column.content}}</p> -->
 			</div>
 		</div>
 	</div>
